@@ -14,6 +14,6 @@ export default {
 
 <style lang="scss">
 /* write SCSS here */
-@import '../../assets/scss/main.scss' 
+@import '../../assets/scss/main.scss'
 
 </style>

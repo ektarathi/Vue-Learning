@@ -14,8 +14,5 @@ export default {
 </script>
 
 <style lang="scss">
-/* write SCSS here */
-.testing {
-	color: green
-}
+@import '../assets/scss/main.scss'
 </style>

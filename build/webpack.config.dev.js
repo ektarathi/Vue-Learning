@@ -32,6 +32,11 @@ module.exports = {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: ['babel-loader']
+      },
+      {
+        test: /\.(js|vue)$/,
+        use: 'eslint-loader',
+        enforce: 'pre'
       }
     ]
   },

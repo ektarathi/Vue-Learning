@@ -1,11 +1,14 @@
 'use strict'
+require("babel-polyfill")
 const webpack = require('webpack')
 const { VueLoaderPlugin } = require('vue-loader')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+
 module.exports = {
   mode: 'development',
   
   entry: [
+    'babel-polyfill',
     './src/app.js'
   ],
   devServer: {
@@ -26,6 +29,13 @@ module.exports = {
           'vue-style-loader',
           'css-loader',
           'sass-loader'
+        ]
+      },
+      {
+        test: /\.css$/,
+        use: [
+          'vue-style-loader',
+          'css-loader'
         ]
       },
       {

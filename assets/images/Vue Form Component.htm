@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<!-- saved from url=(0070)https://antonreshetov.github.io/vue-form-components/#/components/input -->
+<html lang="en" hc="a0" hcx="0" class="gr__antonreshetov_github_io"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="https://antonreshetov.github.io/vue-form-components/favicon.ico"><link rel="stylesheet" href="./Vue Form Component_files/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"><title>Vue Form Component</title><link href="./Vue Form Component_files/chunk-vendors.591cb593.css" rel="preload" as="style"><link href="./Vue Form Component_files/docs.7a64a2d7.css" rel="preload" as="style"><link href="./Vue Form Component_files/chunk-vendors.23a57780.js" rel="preload" as="script"><link href="./Vue Form Component_files/docs.b30e73ef.js" rel="preload" as="script"><link href="./Vue Form Component_files/chunk-vendors.591cb593.css" rel="stylesheet"><link href="./Vue Form Component_files/docs.7a64a2d7.css" rel="stylesheet"><style id="hc_style" type="text/css">html[hc="a0"] {   -webkit-filter: url("https://antonreshetov.github.io/vue-form-components/#hc_extension_off"); } html[hcx="0"] img[src*="jpg"], html[hcx="0"] img[src*="jpeg"], html[hcx="0"] svg image, html[hcx="0"] img.rg_i, html[hcx="0"] embed, html[hcx="0"] object, html[hcx="0"] video {   -webkit-filter: url("https://antonreshetov.github.io/vue-form-components/#hc_extension_off"); }  html[hc="a1"] {   -webkit-filter: url("https://antonreshetov.github.io/vue-form-components/#hc_extension_highcontrast"); } html[hcx="1"] img[src*="jpg"], html[hcx="1"] img[src*="jpeg"], html[hcx="1"] img.rg_i, html[hcx="1"] svg image, html[hcx="1"] embed, html[hcx="1"] object, html[hcx="1"] video {   -webkit-filter: url("https://antonreshetov.github.io/vue-form-components/#hc_extension_highcontrast_back"); }  html[hc="a2"] {   -webkit-filter: url("https://antonreshetov.github.io/vue-form-components/#hc_extension_grayscale"); } html[hcx="2"] img[src*="jpg"], html[hcx="2"] img[src*="jpeg"], html[hcx="2"] img.rg_i, html[hcx="2"] svg image, html[hcx="2"] embed, html[hcx="2"] object, html[hcx="2"] video {   -webkit-filter: url("https://antonreshetov.github.io/vue-form-components/#hc_extension_grayscale_back"); }  html[hc="a3"] {   -webkit-filter: url("https://antonreshetov.github.io/vue-form-components/#hc_extension_invert"); } html[hcx="3"] img[src*="jpg"], html[hcx="3"] img[src*="jpeg"], html[hcx="3"] img.rg_i, html[hcx="3"] svg image, html[hcx="3"] embed, html[hcx="3"] object, html[hcx="3"] video {   -webkit-filter: url("https://antonreshetov.github.io/vue-form-components/#hc_extension_invert_back"); }  html[hc="a4"] {   -webkit-filter: url("https://antonreshetov.github.io/vue-form-components/#hc_extension_invert_grayscale"); } html[hcx="4"] img[src*="jpg"], html[hcx="4"] img[src*="jpeg"], html[hcx="4"] img.rg_i, html[hcx="4"] svg image, html[hcx="4"] embed, html[hcx="4"] object, html[hcx="4"] video {   -webkit-filter: url("https://antonreshetov.github.io/vue-form-components/#hc_extension_invert_back"); }  html[hc="a5"] {   -webkit-filter: url("https://antonreshetov.github.io/vue-form-components/#hc_extension_yellow_on_black"); } html[hcx="5"] img[src*="jpg"], html[hcx="5"] img[src*="jpeg"], html[hcx="5"] img.rg_i, html[hcx="5"] svg image, html[hcx="5"] embed, html[hcx="5"] object, html[hcx="5"] video {   -webkit-filter: url("https://antonreshetov.github.io/vue-form-components/#hc_extension_yellow_on_black_back"); }</style></head><body data-gr-c-s-loaded="true" cz-shortcut-listen="true"><noscript><strong>We're sorry but test doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div class="app"><div class="page"><div class="header"><div class="header__logo"><a href="https://antonreshetov.github.io/vue-form-components/#/" class="active"><img src="./Vue Form Component_files/logo.91d94fd4.svg" alt=""> Vue Form Components</a></div><div class="header__link"><a href="https://antonreshetov.github.io/vue-form-components/#/changelog" class="">Changelog</a><a href="https://github.com/antonreshetov/vue-form-components" target="_blank">Github</a></div></div><div class="sidebar"><nav class="nav"><div class="nav__category">Development</div><div class="nav__item"><a href="https://antonreshetov.github.io/vue-form-components/#/components/install" class="">Install</a></div><div class="nav__category">Component</div><div class="nav__item"><a href="https://antonreshetov.github.io/vue-form-components/#/components/input" class="router-link-exact-active active">Input</a></div><div class="nav__item"><a href="https://antonreshetov.github.io/vue-form-components/#/components/select" class="">Select</a></div><div class="nav__item"><a href="https://antonreshetov.github.io/vue-form-components/#/components/checkbox" class="">Checkbox</a></div><div class="nav__item"><a href="https://antonreshetov.github.io/vue-form-components/#/components/radio" class="">Radio</a></div><div class="nav__item"><a href="https://antonreshetov.github.io/vue-form-components/#/components/button" class="">Button</a></div><div class="nav__item"><a href="https://antonreshetov.github.io/vue-form-components/#/components/form" class="">Form</a></div></nav></div><div class="content"><div id="html"><h1 id="input"><span class="anchor">Input</span></h1><p>Input data component</p>
+<h2 id="basic-usage"><span class="anchor">Basic usage</span></h2><div id="demo-0"><div class="app-tabs"><div class="app-tabs__labels"><div class="app-tabs__labels-item">
+      preview
+    </div><div class="app-tabs__labels-item active">
+      code
+    </div></div><div class="app-tabs__body"><div class="app-tabs__item" style="display: none;"><div class="app-tabs__item-body"></div><div><div class="vue-input"><!----><!----><!----><input type="text" placeholder="Please input" autocomplete="on" class="vue-input__inner"><!----></div></div></div> <div class="app-tabs__item app-tabs__item--active" style=""><div class="app-tabs__item-body"><pre>            <code id="code" class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">template</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">vue-input</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"Please input"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">vue-input</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+  <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+    data () {
+      <span class="hljs-keyword">return</span> {}
+    }
+  }
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></code>
+          </pre></div></div></div></div></div><h2 id="disabled"><span class="anchor">Disabled</span></h2><div id="demo-1"><div class="app-tabs"><div class="app-tabs__labels"><div class="app-tabs__labels-item active">
+      preview
+    </div><div class="app-tabs__labels-item">
+      code
+    </div></div><div class="app-tabs__body"><div class="app-tabs__item app-tabs__item--active"><div class="app-tabs__item-body"></div><div><div class="vue-input"><!----><!----><!----><input type="text" placeholder="Please input" disabled="disabled" autocomplete="on" class="vue-input__inner"><!----></div></div></div> <div class="app-tabs__item" style="display: none;"><div class="app-tabs__item-body"><pre>            <code id="code" class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">template</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">vue-input</span>
+    <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"Please input"</span>
+    <span class="hljs-attr">:disabled</span>=<span class="hljs-string">"true"</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">vue-input</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+  <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+    data () {
+      <span class="hljs-keyword">return</span> {}
+    }
+  }
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></code>
+          </pre></div></div></div></div></div><h2 id="prefix-or-suffix"><span class="anchor">Prefix or suffix</span></h2><p>You can add for example icons</p>
+<div id="demo-2"><div class="app-tabs"><div class="app-tabs__labels"><div class="app-tabs__labels-item active">
+      preview
+    </div><div class="app-tabs__labels-item">
+      code
+    </div></div><div class="app-tabs__body"><div class="app-tabs__item app-tabs__item--active"><div class="app-tabs__item-body"></div><div><div class="vue-input vue-input--prefix"><div class="vue-input__prefix"><i class="fas fa-search"></i></div><!----><!----><input type="text" placeholder="Please input" autocomplete="on" class="vue-input__inner"><!----></div> <div class="vue-input vue-input--suffix"><!----><div class="vue-input__suffix"><i class="fas fa-search"></i></div><!----><input type="text" placeholder="Please input" autocomplete="on" class="vue-input__inner"><!----></div></div></div> <div class="app-tabs__item" style="display: none;"><div class="app-tabs__item-body"><pre>            <code id="code" class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">template</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">vue-input</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"Please input"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">template</span> <span class="hljs-attr">slot</span>=<span class="hljs-string">"prefix"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fas fa-search"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">vue-input</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">vue-input</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"Please input"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">template</span> <span class="hljs-attr">slot</span>=<span class="hljs-string">"suffix"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fas fa-search"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">vue-input</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+  <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+    data () {
+      <span class="hljs-keyword">return</span> {}
+    }
+  }
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></code>
+          </pre></div></div></div></div></div><h2 id="prepend-or-append"><span class="anchor">Prepend or append</span></h2><div id="demo-3"><div class="app-tabs"><div class="app-tabs__labels"><div class="app-tabs__labels-item active">
+      preview
+    </div><div class="app-tabs__labels-item">
+      code
+    </div></div><div class="app-tabs__body"><div class="app-tabs__item app-tabs__item--active"><div class="app-tabs__item-body"></div><div><div class="vue-input vue-input--prepend"><!----><!----><div class="vue-input__prepend">
+      http://
+    </div><input type="text" placeholder="Please input" autocomplete="on" class="vue-input__inner"><!----></div> <div class="vue-input vue-input--append"><!----><!----><!----><input type="text" placeholder="Please input" autocomplete="on" class="vue-input__inner"><div class="vue-input__append">
+      .com
+    </div></div></div></div> <div class="app-tabs__item" style="display: none;"><div class="app-tabs__item-body"><pre>            <code id="code" class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">template</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">vue-input</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"Please input"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">template</span> <span class="hljs-attr">slot</span>=<span class="hljs-string">"prepend"</span>&gt;</span>
+      http://
+    <span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">vue-input</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">vue-input</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"Please input"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">template</span> <span class="hljs-attr">slot</span>=<span class="hljs-string">"append"</span>&gt;</span>
+      .com
+    <span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">vue-input</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+  <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+    data () {
+      <span class="hljs-keyword">return</span> {}
+    }
+  }
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></code>
+          </pre></div></div></div></div></div><h2 id="as-textarea"><span class="anchor">As textarea</span></h2><div id="demo-4"><div class="app-tabs"><div class="app-tabs__labels"><div class="app-tabs__labels-item active">
+      preview
+    </div><div class="app-tabs__labels-item">
+      code
+    </div></div><div class="app-tabs__body"><div class="app-tabs__item app-tabs__item--active"><div class="app-tabs__item-body"></div><div><div class="vue-textarea"><!----><!----><!----><textarea placeholder="Please input" rows="3" class="vue-textarea__inner"></textarea><!----></div></div></div> <div class="app-tabs__item" style="display: none;"><div class="app-tabs__item-body"><pre>            <code id="code" class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">template</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">vue-input</span>
+    <span class="hljs-attr">type</span>=<span class="hljs-string">"textarea"</span>
+    <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"Please input"</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">vue-input</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+  <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+    data () {
+      <span class="hljs-keyword">return</span> {}
+    }
+  }
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></code>
+          </pre></div></div></div></div></div><h2 id="attributes"><span class="anchor">Attributes</span></h2><table class="app-table">
+        <thead><tr>
+<th>Attributes</th>
+<th>Description</th>
+<th>Type</th>
+<th>Accepted values</th>
+<th>Default</th>
+</tr>
+</thead>
+        <tbody><tr>
+<td><code>type</code></td>
+<td>Type of input</td>
+<td><code>String</code></td>
+<td>text, number, textarea</td>
+<td>text</td>
+</tr>
+<tr>
+<td><code>value</code></td>
+<td>Binding value</td>
+<td><code>String</code>, <code>Number</code></td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td><code>disabled</code></td>
+<td>Disable the input</td>
+<td><code>Boolean</code></td>
+<td>-</td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>placeholder</code></td>
+<td>Placeholder of value</td>
+<td><code>String</code></td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td><code>autocomplete</code></td>
+<td>Same as <code>autocomplete</code> in native input</td>
+<td><code>Boolean</code></td>
+<td>-</td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>name</code></td>
+<td>Same as <code>name</code> in native input</td>
+<td><code>String</code></td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td><code>readonly</code></td>
+<td>Same as <code>readonly</code> in native input</td>
+<td><code>Boolean</code></td>
+<td>-</td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>min</code></td>
+<td>Same as <code>min</code> in native input</td>
+<td><code>Number</code></td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td><code>max</code></td>
+<td>Same as <code>max</code> in native input</td>
+<td><code>Number</code></td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td><code>rows</code></td>
+<td>Same as <code>rows</code> in native textarea, only work when <code>type</code> is <code>textarea</code></td>
+<td><code>Number</code></td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+      </table><h2 id="input-slots"><span class="anchor">Input slots</span></h2><p>Only works when type is <code>text</code></p>
+<table class="app-table">
+        <thead><tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+        <tbody><tr>
+<td><code>prefix</code></td>
+<td>Content as Input prefix</td>
+</tr>
+<tr>
+<td><code>suffix</code></td>
+<td>Content as Input sufix</td>
+</tr>
+<tr>
+<td><code>prepend</code></td>
+<td>Content to prepend before Input</td>
+</tr>
+<tr>
+<td><code>append</code></td>
+<td>Content to append before Input</td>
+</tr>
+</tbody>
+      </table></div></div></div></div><script type="text/javascript" async="" src="./Vue Form Component_files/ga.js"></script><script async="" src="./Vue Form Component_files/analytics.js"></script><script>(function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+          (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+          m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+      })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga')
+
+      ga('create', 'UA-56182454-4', 'auto')
+      ga('send', 'pageview')</script><div id="hc_extension_bkgnd" style="position: fixed; inset: 0px; z-index: -1999999999; display: block; background: none 0% 0% / auto repeat scroll padding-box border-box rgb(255, 255, 255);"></div><span id="hc_extension_svg_filters" hidden=""><svg xmlns="http://www.w3.org/2000/svg" version="1.1"><defs><filter x="0" y="0" width="99999" height="99999" id="hc_extension_off"><fecomponenttransfer><fefuncr type="table" tableValues="0 1"></fefuncr><fefuncg type="table" tableValues="0 1"></fefuncg><fefuncb type="table" tableValues="0 1"></fefuncb></fecomponenttransfer></filter><filter x="0" y="0" width="99999" height="99999" id="hc_extension_highcontrast"><fecomponenttransfer><fefuncr type="gamma" exponent="3.0"></fefuncr><fefuncg type="gamma" exponent="3.0"></fefuncg><fefuncb type="gamma" exponent="3.0"></fefuncb></fecomponenttransfer></filter><filter x="0" y="0" width="99999" height="99999" id="hc_extension_highcontrast_back"><fecomponenttransfer><fefuncr type="gamma" exponent="0.33"></fefuncr><fefuncg type="gamma" exponent="0.33"></fefuncg><fefuncb type="gamma" exponent="0.33"></fefuncb></fecomponenttransfer></filter><filter x="0" y="0" width="99999" height="99999" id="hc_extension_grayscale"><fecolormatrix type="matrix" values="0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0 0 0 1 0"></fecolormatrix><fecomponenttransfer><fefuncr type="gamma" exponent="3"></fefuncr><fefuncg type="gamma" exponent="3"></fefuncg><fefuncb type="gamma" exponent="3"></fefuncb></fecomponenttransfer></filter><filter x="0" y="0" width="99999" height="99999" id="hc_extension_grayscale_back"><fecomponenttransfer><fefuncr type="gamma" exponent="0.33"></fefuncr><fefuncg type="gamma" exponent="0.33"></fefuncg><fefuncb type="gamma" exponent="0.33"></fefuncb></fecomponenttransfer></filter><filter x="0" y="0" width="99999" height="99999" id="hc_extension_invert"><fecomponenttransfer><fefuncr type="gamma" amplitude="-1" exponent="3" offset="1"></fefuncr><fefuncg type="gamma" amplitude="-1" exponent="3" offset="1"></fefuncg><fefuncb type="gamma" amplitude="-1" exponent="3" offset="1"></fefuncb></fecomponenttransfer></filter><filter x="0" y="0" width="99999" height="99999" id="hc_extension_invert_back"><fecomponenttransfer><fefuncr type="table" tableValues="1 0"></fefuncr><fefuncg type="table" tableValues="1 0"></fefuncg><fefuncb type="table" tableValues="1 0"></fefuncb></fecomponenttransfer><fecomponenttransfer><fefuncr type="gamma" exponent="1.7"></fefuncr><fefuncg type="gamma" exponent="1.7"></fefuncg><fefuncb type="gamma" exponent="1.7"></fefuncb></fecomponenttransfer></filter><filter x="0" y="0" width="99999" height="99999" id="hc_extension_invert_grayscale"><fecolormatrix type="matrix" values="0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0 0 0 1 0"></fecolormatrix><fecomponenttransfer><fefuncr type="gamma" amplitude="-1" exponent="3" offset="1"></fefuncr><fefuncg type="gamma" amplitude="-1" exponent="3" offset="1"></fefuncg><fefuncb type="gamma" amplitude="-1" exponent="3" offset="1"></fefuncb></fecomponenttransfer></filter><filter x="0" y="0" width="99999" height="99999" id="hc_extension_yellow_on_black"><fecomponenttransfer><fefuncr type="gamma" amplitude="-1" exponent="3" offset="1"></fefuncr><fefuncg type="gamma" amplitude="-1" exponent="3" offset="1"></fefuncg><fefuncb type="gamma" amplitude="-1" exponent="3" offset="1"></fefuncb></fecomponenttransfer><fecolormatrix type="matrix" values="0.3 0.5 0.2 0 0 0.3 0.5 0.2 0 0 0 0 0 0 0 0 0 0 1 0"></fecolormatrix></filter><filter x="0" y="0" width="99999" height="99999" id="hc_extension_yellow_on_black_back"><fecomponenttransfer><fefuncr type="table" tableValues="1 0"></fefuncr><fefuncg type="table" tableValues="1 0"></fefuncg><fefuncb type="table" tableValues="1 0"></fefuncb></fecomponenttransfer><fecomponenttransfer><fefuncr type="gamma" exponent="0.33"></fefuncr><fefuncg type="gamma" exponent="0.33"></fefuncg><fefuncb type="gamma" exponent="0.33"></fefuncb></fecomponenttransfer></filter></defs></svg></span><script src="./Vue Form Component_files/chunk-vendors.23a57780.js"></script><script src="./Vue Form Component_files/docs.b30e73ef.js"></script></body><span class="gr__tooltip"><span class="gr__tooltip-content"></span><i class="gr__tooltip-logo"></i><span class="gr__triangle"></span></span></html>
